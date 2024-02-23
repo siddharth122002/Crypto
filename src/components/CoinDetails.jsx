@@ -17,7 +17,6 @@ export default function CoinDetails(){
 
     const btns = ["24h","7d","60d","200d","1y","max"];
     const changeDayHandler=(btn)=>{
-        console.log(btn);
         setLoading(true)
         setDays(btn)
     }
@@ -40,7 +39,7 @@ export default function CoinDetails(){
             }
         }
         fetchCoin()
-    },[params.id,currency,days])
+    },[params.id,currency,days,loading])
 
     if(error) return <Error msg={'Error while fetching coin details...'}/>
     return(

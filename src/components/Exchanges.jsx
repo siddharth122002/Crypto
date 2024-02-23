@@ -24,10 +24,10 @@ export default function Exchanges(){
     },[])
     if(error) return <Error msg={'Error while fetching exchanges...'}/>
     return(
-        <Container maxW={'container.xl'} >
+        <Container maxW={'container.xl'} bgColor={'white'}>
             {loading?<Loader/>:(
                 <>
-                <HStack wrap={"wrap"} justifyContent={"space-evenly"}>
+                <HStack  wrap={"wrap"} justifyContent={"space-evenly"}>
                     {exchanges.map((i)=>(
                         <ExchangeCard 
                         key={i.id} 
@@ -46,7 +46,7 @@ export default function Exchanges(){
 
 const ExchangeCard=({name,img,rank,url})=>(
     <a href={url} target={'blank'}>
-        <VStack w={52} shadow={'lg'} borderRadius={'lg'} p={8}
+        <VStack bgColor={'#f5f5f5'} w={52} shadow={'lg'} borderRadius={'lg'} p={8}
         transition={'all 0.3s'} m={4}
         css={{
             '&:hover':{

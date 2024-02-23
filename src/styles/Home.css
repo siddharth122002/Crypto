@@ -1,0 +1,16 @@
+#inner > h1 {
+  font-size: 10rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  #inner {
+    background-color: black;
+  }
+  #inner > h1 {
+    font-size: 4rem;
+  }
+}

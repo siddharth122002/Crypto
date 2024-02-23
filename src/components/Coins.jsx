@@ -83,7 +83,7 @@ export default function Coins(){
 
 const CoinsCard=({id,name,img,symbol,price,currencySymbol="₹"})=>(
     <Link to={`/coins/${id}`}>
-        <VStack w={52} shadow={'lg'} borderRadius={'lg'} p={8}
+        <VStack bgColor={'#f5f5f5'} w={52} shadow={'lg'} borderRadius={'lg'} p={8}
         transition={'all 0.3s'} m={4}
         css={{
             '&:hover':{
