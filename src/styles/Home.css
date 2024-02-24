@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 1000px) {
   #inner {
+    height: 20vh;
     background-color: black;
   }
   #inner > h1 {
